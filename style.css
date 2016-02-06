@@ -1,0 +1,424 @@
+/* !
+Theme Name: Del
+Theme URI: http://ceciliasantos.com
+Author: Cecilia Santos
+Author URI: http://ceciliasantos.com
+Description: A Responsive WordPress Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: del
+Tags: Bootstrap, Responsive
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Del is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+#primary {
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+#secondary {
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget {
+  margin: 0 0 1.5em;
+}
+
+.widget select {
+  max-width: 100%;
+}
+
+.widget ul {
+  list-style: none;
+  padding-left: 8px;
+}
+
+.sticky {
+  display: block;
+}
+
+.hentry {
+  border-bottom: 1px solid #dddddd;
+  margin: 0 0 1.8em;
+  padding-bottom: 1.8em;
+}
+
+.byline {
+  display: none;
+}
+
+.page-content {
+  margin: 1.5em 0 0;
+}
+
+.page-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.entry-content {
+  margin: 1.5em 0 0;
+}
+
+.entry-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.wp-post-image {
+  margin-bottom: 20px;
+}
+
+.author-meta {
+  margin-top: 40px;
+}
+
+.author-meta .avatar {
+  border-radius: 50%;
+}
+
+.author-meta .fa {
+  font-size: 22px;
+}
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+.infinite-scroll .posts-navigation {
+  display: none;
+}
+
+.infinite-scroll.neverending .site-footer {
+  display: none;
+}
+
+embed {
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+object {
+  max-width: 100%;
+}
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-caption {
+  display: block;
+}
+
+.comments-title {
+  border-bottom: 1px solid #eeeeee;
+  margin: 40px 0 20px;
+  padding-bottom: 9px;
+}
+
+.comment-reply-title {
+  border-bottom: 1px solid #eeeeee;
+  margin: 40px 0 20px;
+  padding-bottom: 9px;
+}
+
+.comment-meta {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.comment-details {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 25px;
+  overflow: hidden;
+  padding-bottom: 25px;
+  zoom: 1;
+}
+
+.comment-details .reply {
+  margin-top: 10px;
+}
+
+#commentform #comment {
+  width: 100% !important;
+}
+
+#commentform #submit {
+  background-color: #ffffff;
+  background-image: none;
+  border-color: #cccccc;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+#commentform #submit:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #333333;
+}
+
+.search-highlight {
+  background: #ffff00;
+}
+
+#colophon {
+  margin-top: 50px;
+}
+
+#colophon .container {
+  border-top: 1px solid #dddddd;
+  padding-top: 25px;
+}
+
+.footer-menu {
+  margin-left: 0;
+  padding: 0 0 30px 0;
+}
+
+.footer-menu li {
+  display: inline;
+  list-style-type: none;
+}
+
+.footer-menu li a {
+  border-left: 1px solid #dddddd;
+  padding: 0 8px;
+}
+
+.footer-menu > li:first-child > a {
+  border-left: none;
+  padding: 0 8px 0 0;
+}
+
+.copyright {
+  float: left;
+}
+
+@media only screen and (min-width: 992px) {
+  .copyright {
+    float: right;
+  }
+}
+
+.widget_search .search-submit {
+  display: none;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.single .byline {
+  display: inline;
+}
+
+.group-blog .byline {
+  display: inline;
+}
+
+.blog .format-aside .entry-title {
+  display: none;
+}
+
+.archive .format-aside .entry-title {
+  display: none;
+}
+
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.entry-meta span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.entry-meta span:last-child {
+  margin-right: 0;
+}
+
+.entry-meta span .fa {
+  color: #bcbcbc;
+}
+
+.entry-meta span a {
+  color: #777777;
+  text-decoration: none;
+}
+
+.entry-meta span a:hover {
+  text-decoration: underline;
+}
+
+ol.comment-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment-author .avatar {
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  margin-right: 25px;
+  padding: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.comment-date a {
+  color: #777777;
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+/*--------------------------------------------------------------
+Media Queries 
+--------------------------------------------------------------*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .copyright {
+    float: right;
+  }
+}
+
+/* Large Devices, Wide Screens */

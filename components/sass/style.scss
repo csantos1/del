@@ -1,0 +1,395 @@
+/* !
+Theme Name: Del
+Theme URI: http://ceciliasantos.com
+Author: Cecilia Santos
+Author URI: http://ceciliasantos.com
+Description: A Responsive WordPress Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: del
+Tags: Bootstrap, Responsive
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Del is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+//colors
+$color_alto_approx: #dddddd;
+$color_silver_approx: #bcbcbc;
+$color_tapa_approx: #777777;
+$color_gallery_approx: #eeeeee;
+$white: #ffffff;
+$color_celeste_approx: #cccccc;
+$color_mine_shaft_approx: #333333;
+$color_mercury_approx: #e6e6e6;
+$color_silver_chalice_approx: #adadad;
+$yellow: #ffff00;
+
+#primary {
+	//Instead of the line below you could use @include hyphens($value)
+	hyphens: auto;
+	//Instead of the line below you could use @include word-break($value)
+	word-break: break-all;
+	//Instead of the line below you could use @include word-break($value)
+	word-break: break-word;
+}
+#secondary {
+	//Instead of the line below you could use @include hyphens($value)
+	hyphens: auto;
+	//Instead of the line below you could use @include word-break($value)
+	word-break: break-all;
+	//Instead of the line below you could use @include word-break($value)
+	word-break: break-word;
+}
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.widget {
+	margin: 0 0 1.5em;
+	select {
+		max-width: 100%;
+	}
+	ul {
+		list-style: none;
+		padding-left: 8px;
+	}
+}
+.sticky {
+	display: block;
+}
+.hentry {
+	border-bottom: 1px solid $color_alto_approx;
+	margin: 0 0 1.8em;
+	padding-bottom: 1.8em;
+}
+.byline {
+	display: none;
+}
+.page-content {
+	margin: 1.5em 0 0;
+	.wp-smiley {
+		border: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 0;
+	}
+}
+.entry-content {
+	margin: 1.5em 0 0;
+	.wp-smiley {
+		border: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 0;
+	}
+}
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+img {
+	max-width: 100%;
+	&.wp-post-image {
+		margin-bottom: 20px;
+	}
+}
+.author-meta {
+	margin-top: 40px;
+	.avatar {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 50%;
+	}
+	.fa {
+		font-size: 22px;
+	}
+}
+.comment-content {
+	a {
+		word-wrap: break-word;
+	}
+	.wp-smiley {
+		border: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 0;
+	}
+}
+.bypostauthor {
+	display: block;
+}
+.infinite-scroll {
+	.posts-navigation {
+		display: none;
+	}
+	&.neverending .site-footer {
+		display: none;
+	}
+}
+embed {
+	max-width: 100%;
+}
+iframe {
+	max-width: 100%;
+}
+object {
+	max-width: 100%;
+}
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+	img[class*="wp-image-"] {
+		display: block;
+		margin: 0 auto;
+	}
+	.wp-caption-text {
+		margin: 0.8075em 0;
+	}
+}
+.wp-caption-text {
+	text-align: center;
+}
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+.gallery-caption {
+	display: block;
+}
+.comments-title {
+	border-bottom: 1px solid $color_gallery_approx;
+	margin: 40px 0 20px;
+	padding-bottom: 9px;
+}
+.comment-reply-title {
+	border-bottom: 1px solid $color_gallery_approx;
+	margin: 40px 0 20px;
+	padding-bottom: 9px;
+}
+.comment-meta {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.comment-details {
+	border-bottom: 1px solid $color_alto_approx;
+	margin-bottom: 25px;
+	overflow: hidden;
+	padding-bottom: 25px;
+	zoom: 1;
+	.reply {
+		margin-top: 10px;
+	}
+}
+#commentform {
+	#comment {
+		width: 100% !important;
+	}
+	#submit {
+		background-color: $white;
+		background-image: none;
+		border-color: $color_celeste_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		border: 1px solid transparent;
+		color: $color_mine_shaft_approx;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.42857143;
+		margin-bottom: 0;
+		padding: 6px 12px;
+		text-align: center;
+		//Instead of the line below you could use @include user-select($select)
+		user-select: none;
+		vertical-align: middle;
+		white-space: nowrap;
+		&:hover {
+			background-color: $color_mercury_approx;
+			border-color: $color_silver_chalice_approx;
+			color: $color_mine_shaft_approx;
+		}
+	}
+}
+.search-highlight {
+	background: $yellow;
+}
+#colophon {
+	margin-top: 50px;
+	.container {
+		border-top: 1px solid $color_alto_approx;
+		padding-top: 25px;
+	}
+}
+.footer-menu {
+	margin-left: 0;
+	padding: 0 0 30px 0;
+	li {
+		display: inline;
+		list-style-type: none;
+		a {
+			border-left: 1px solid $color_alto_approx;
+			padding: 0 8px;
+		}
+	}
+	> li:first-child > a {
+		border-left: none;
+		padding: 0 8px 0 0;
+	}
+}
+.copyright {
+	float: left;
+}
+@media only screen and(min-width : 320px) {
+}
+@media only screen and(min-width : 480px) {
+}
+@media only screen and(min-width : 768px) {
+}
+@media only screen and(min-width : 992px) {
+	.copyright {
+		float: right;
+	}
+}
+@media only screen and(min-width : 1200px) {
+}
+.widget_search .search-submit {
+	display: none;
+}
+.updated:not(.published) {
+	display: none;
+}
+.single .byline {
+	display: inline;
+}
+.group-blog .byline {
+	display: inline;
+}
+.blog .format-aside .entry-title {
+	display: none;
+}
+.archive .format-aside .entry-title {
+	display: none;
+}
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+.entry-meta span {
+	display: inline-block;
+	margin-right: 20px;
+	&:last-child {
+		margin-right: 0;
+	}
+	.fa {
+		color: $color_silver_approx;
+	}
+	a {
+		color: $color_tapa_approx;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+ol.comment-list {
+	list-style: none;
+	padding-left: 0;
+}
+.comment-author .avatar {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	border: 1px solid $color_alto_approx;
+	margin-right: 25px;
+	padding: 4px;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.2s ease-in-out;
+}
+.comment-date a {
+	color: $color_tapa_approx;
+	font-size: 11px;
+	margin-right: 10px;
+}
+
+/*--------------------------------------------------------------
+Media Queries 
+--------------------------------------------------------------*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	.copyright {
+		float: right;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
