@@ -21,17 +21,101 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 
-//colors
-$color_alto_approx: #dddddd;
-$color_silver_approx: #bcbcbc;
-$color_tapa_approx: #777777;
-$color_gallery_approx: #eeeeee;
-$white: #ffffff;
-$color_celeste_approx: #cccccc;
-$color_mine_shaft_approx: #333333;
-$color_mercury_approx: #e6e6e6;
-$color_silver_chalice_approx: #adadad;
-$yellow: #ffff00;
+//imports
+@import 'variables';
+@import 'menus';
+
+//styles
+body {
+    font-family: $font_main;
+    font-weight: normal;
+    //padding-top: 70px;
+    &.logged-in .navbar-fixed-top {
+        //top: 33px;
+    }
+}
+.container {
+    position: relative;
+}
+.navbar-inverse {
+    background: rgba(0,0,0,.7);
+}
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+//HEADER SEARCH
+.search-toggle {
+	&:hover {
+		background: $color_emperor_approx;
+		background: $color_gravel_approx;
+	}
+	&.active {
+		background: $color_emperor_approx;
+		background: $color_gravel_approx;
+	}
+}
+@media screen and(max-width: 600px) {
+	.search-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-right: 0;
+	}
+}
+input[type="search"] {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	width: 100%;
+}
+.search-box-wrapper {
+        position: absolute;
+	width: 100%;
+        z-index: 10000;
+	display: none;
+}
+.search-box {
+	padding: 1em;
+	background: $color_emperor_approx;
+	.search-field {
+		max-width: 362px;
+		float: right;
+		padding: 1rem 2rem 1rem 4rem;
+		font-size: 20px;
+		font-size: 2rem;
+		background-color: $white;
+		border: 0;
+	}
+	.search-submit {
+		display: none;
+	}
+}
+.search-toggle {
+	float: right;
+	width: 54px;
+	height: 94px;
+	padding: 40px 12px 60px;
+	margin-right: 20px;
+        margin-left: 30px;
+	color: $white;
+	text-align: center;
+	cursor: pointer;
+}
+.btn-primary {
+    color: #fff;
+    background-color: $red;
+    border-color: $red;
+}
+.error404 .search-submit {
+	display: none;
+}
+.search .search-submit {
+	display: none;
+}
+.screen-reader-text {
+    display: none;
+}
 
 #primary {
 	//Instead of the line below you could use @include hyphens($value)

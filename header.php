@@ -16,13 +16,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 
 <?php wp_head(); ?>
 </head>
@@ -33,7 +26,7 @@
 	<header id="masthead" class="site-header" role="banner">
 	
 		 <nav role="navigation">
-		<div class="navbar navbar-static-top navbar-default">
+		<div class="navbar navbar-fixed-top navbar-inverse">
 			<div class="container">
 				<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 				<div class="navbar-header">
@@ -43,10 +36,16 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
+                                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img id="logo" src="<?php bloginfo('template_url'); ?>/images/del-logo.png" alt="<?php bloginfo( 'name' ) ?>"></a>
 				</div>
 
 				<div class="navbar-collapse collapse navbar-responsive-collapse">
+                                    
+                                    <div class="search-toggle">
+                <i class="fa fa-search"></i>
+                <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'my-simone' ); ?></a>
+            </div>
+                                    
 					<?php
 
 					$args = array(
@@ -62,12 +61,26 @@
 					}
 
 					?>
+                                
+                                
+                    
+        </div>
+                                
+                        </div>
 
-				</div>
-			</div>
-		</div>           
-	</nav>
+                    <div id="search-container" class="search-box-wrapper clear">
+                <div class="search-box clear">
+                    <?php get_search_form(); ?>
+                </div>
+            </div>
+                    
+                </div>                
+
+                         
+                    </nav><!-- #site-navigation -->
 	
 	</header><!-- #masthead -->
+        
+        <?php putRevSlider("banner","homepage") ?>
 
 	<div id="content" class="site-content">

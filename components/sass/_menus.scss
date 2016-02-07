@@ -1,0 +1,15 @@
+.navbar-nav > li > a {
+    font-size: 18px;
+    line-height: 53px;
+    padding: 23px 13px;
+    &:after {
+        content: '|';
+        position: relative;
+        right: -13px;
+    }
+}
+.navbar-nav > li:last-of-type > a {
+    &:after {
+        display: none;
+    }
+}

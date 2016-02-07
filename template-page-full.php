@@ -1,11 +1,11 @@
 <?php
 /**
- * The template for displaying the Home page.
+ * The template for displaying pages without sidebar.
  *
  *
  * @package Del
  * 
- * Template Name: Home Page
+ * Template Name: Page Full Width
  * 
  */
 

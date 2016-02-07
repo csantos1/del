@@ -40,11 +40,16 @@ function del_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in two locations.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'del' ),
-    'footer-menu' => __( 'Footer Menu', 'del' ),
-	) );
+         /**
+         * Register menus.
+         *
+         */
+        register_nav_menus( array(
+                'primary' => esc_html__( 'Primary Menu', 'del' ),
+                'side' => esc_html__( 'Sidebar Menu', 'del' ),
+                'footer' => esc_html__( 'Footer Menu', 'del' )
+        ) );
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -93,6 +98,7 @@ function del_content_width() {
 }
 add_action( 'after_setup_theme', 'del_content_width', 0 );
 
+
 /**
  * Register widget area.
  *
@@ -136,13 +142,17 @@ add_action( 'widgets_init', 'del_widgets_init' );
  * Enqueue scripts and styles.
  */
 function del_scripts() {
-	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.2.0', 'all' );
+	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.css', array(), '3.2.0', 'all' );
 	
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.2.0', 'all' );
+        
+        wp_enqueue_style( 'font-opensans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700', array(), '4.2.0', 'all' );
 
 	wp_enqueue_style( 'del-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.2.0', true );
+        
+         wp_enqueue_script('del-hide-search', get_template_directory_uri() . '/js/hide-search.js', array(), '20140404', true);
 
 	// wp_enqueue_script( 'del-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
